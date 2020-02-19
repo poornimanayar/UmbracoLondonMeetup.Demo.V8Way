@@ -1,6 +1,4 @@
-﻿using Umbraco.Core;
-using Umbraco.Core.Composing;
-using Umbraco.Core.IO;
+﻿using Umbraco.Core.Composing;
 
 namespace LondonMeetup.Demo.V8Way.CodeSamples.Composers
 {
