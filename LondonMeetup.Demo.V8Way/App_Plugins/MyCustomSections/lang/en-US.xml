@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="sections">
+    <!-- key value pair with section alias as the key-->
+    <key alias="myTreelessSection">Treeless, Full-Width Section</key> 
+    <key alias="myCustomSection">My Custom Section</key>
+  </area>
+</language>

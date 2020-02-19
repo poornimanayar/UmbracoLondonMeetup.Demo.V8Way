@@ -1,0 +1,14 @@
+﻿{
+  "sections": [
+    {
+      "alias": "myTreelessSection",
+      "name": "Treeless Section"
+    },
+    {
+      "alias": "myCustomSection",
+      "name": "My Custom Section"
+    }
+  ]
+}
+
+//add section to the user group from back office

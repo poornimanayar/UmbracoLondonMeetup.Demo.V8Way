@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="sections">
+    <!-- key value pair using section alias as key-->
+    <key alias="customCodeSection">My Custom Code Section</key>
+  </area>
+  <area alias="treeHeaders">
+    <!-- key value pair using tree alias as key-->
+    <key alias="customCodeSectionTreeAlias">Custom Code Section With Tree</key>
+  </area>
+  <!-- section alias + "Tree" in this case customCodeSection is the section alias-->
+  <area alias="customCodeSectionTree">
+    <key alias="intro">Hello overview</key>
+    <key alias="tree1">Hello tree 1</key>
+    <key alias="tree2">Hello tree 2</key>
+  </area>
+</language>

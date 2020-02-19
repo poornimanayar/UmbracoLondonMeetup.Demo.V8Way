@@ -1,0 +1,9 @@
+﻿@model IEnumerable<IContent>
+
+@if (Model != null)
+{
+  foreach (var version in Model)
+  {
+    <p>@version.VersionId</p>
+  }
+}

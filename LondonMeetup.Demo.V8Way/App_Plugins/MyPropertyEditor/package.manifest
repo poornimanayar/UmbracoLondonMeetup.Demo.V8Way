@@ -1,0 +1,20 @@
+﻿{
+    // we can define multiple editors
+  "propertyEditors": [
+    {
+      /*this must be a unique alias*/
+      "alias": "My.PropertyEditor",
+      /*the name*/
+      "name": "My Property Editor",
+      /*the icon*/
+      "\"icon2: \"icon-code\",": null,
+      /*grouping for "Select editor" dialog*/
+      "group": "Rich Content",
+      /*the HTML file we will load for the editor*/
+      "editor": {
+        "view": "~/App_Plugins/MyPropertyEditor/view.html"
+      }
+    }
+  ],
+  "javascript": [ "~/App_Plugins/MyPropertyEditor/mypropertyeditor.controller.js" ]
+}

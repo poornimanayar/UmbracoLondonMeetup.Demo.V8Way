@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language>
+  <!--keyword in dashboard service. When Dashboard collection is scanned the dashboard alias 
+  is added by default as the label/title of the dashboard-->
+  <area alias="dashboardTabs">
+    <!--add a key-value pair using dashboard alias as the key value-->
+    <key alias="myWelcomeDashboard">Umbraco London MeetUp Welcome</key>
+  </area>
+</language>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LondonMeetup.Demo.V8Way", "LondonMeetup.Demo.V8Way/LondonMeetup.Demo.V8Way.csproj", "{ACCF56F2-036D-4755-9B8B-53F3ACDD2E2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACCF56F2-036D-4755-9B8B-53F3ACDD2E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCF56F2-036D-4755-9B8B-53F3ACDD2E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCF56F2-036D-4755-9B8B-53F3ACDD2E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCF56F2-036D-4755-9B8B-53F3ACDD2E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A02680E2-FD71-4A26-BCDB-64AA91FE3B69}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+App_Data/
+bin/
+obj
+
+.vs/LondonMeetup.Demo.V8Way/v16/Server/sqlite3/
+
+*.sdf
+
+.vs/LondonMeetup.Demo.V8Way/config/applicationhost.config
+
+.vs/LondonMeetup.Demo.V8Way/v16/
+
+packages

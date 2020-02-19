@@ -1,0 +1,10 @@
+﻿{
+  "dashboards": [
+    {
+      "alias": "myTreelessSectionDashboard",
+      "view": "~/App_Plugins/MyCustomDashboards/MyTreelessSectionDashboard/mytreelesssectiondashboard.html",
+      "sections": [ "myTreelessSection", "myCustomSection" ],
+      "weight": 20
+    }
+  ]
+}

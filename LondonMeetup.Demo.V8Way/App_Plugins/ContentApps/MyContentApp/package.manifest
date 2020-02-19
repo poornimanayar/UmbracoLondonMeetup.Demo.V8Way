@@ -1,0 +1,15 @@
+﻿{
+  "contentApps": [
+    {
+      "name": "My Content App", //name
+      "alias": "myContentApp", //alias
+      "weight": -10, //lower the number earlier it appears between content and info
+      "icon": "icon-calculator", //icon shown
+      "view": "~/App_Plugins/ContentApps/MyContentApp/view.html", //view
+      "show": [
+        "-content/home", //do not show on home doc type (-)
+        "+content/*" // show on all other types (+)
+      ]
+    }
+  ]
+}
