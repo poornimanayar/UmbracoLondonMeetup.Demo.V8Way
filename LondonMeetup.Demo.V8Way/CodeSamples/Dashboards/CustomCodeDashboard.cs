@@ -11,8 +11,8 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Dashboards
 
         public string[] Sections => new[]
         {
-                Umbraco.Core.Constants.Applications.Content,
-                Umbraco.Core.Constants.Applications.Settings
+                Constants.Applications.Content,
+                Constants.Applications.Settings
             };
 
         public string View => "/App_Plugins/MyCustomDashboards/MyCustomCodeDashboard/mycustomcodedashboard.html";
