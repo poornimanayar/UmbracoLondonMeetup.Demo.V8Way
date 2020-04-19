@@ -2112,6 +2112,8 @@
     <Compile Include="CodeSamples\Components\MyPublishEventComponent.cs" />
     <Compile Include="CodeSamples\Components\MyValidationHandlerComponent.cs" />
     <Compile Include="CodeSamples\Components\ProductIndexComponent.cs" />
+    <Compile Include="CodeSamples\Components\ScheduledLoggerComponent.cs" />
+    <Compile Include="CodeSamples\Composers\ScheduledLoggerComposer.cs" />
     <Compile Include="CodeSamples\Composers\SetMediaFileSystemComposer.cs" />
     <Compile Include="CodeSamples\Composers\CorsComposer.cs" />
     <Compile Include="CodeSamples\Composers\CustomCodeContentAppComposer.cs" />
@@ -2135,6 +2137,7 @@
     <Compile Include="CodeSamples\Handlers\MyRequestValidationHandler.cs" />
     <Compile Include="CodeSamples\Components\ProductRouteComponent.cs" />
     <Compile Include="CodeSamples\Handlers\ProductsRouteHandler.cs" />
+    <Compile Include="CodeSamples\Scheduling\ScheduledLogger.cs" />
     <Compile Include="Models\Blog.generated.cs" />
     <Compile Include="Models\Blogpost.generated.cs" />
     <Compile Include="Models\Contact.generated.cs" />
