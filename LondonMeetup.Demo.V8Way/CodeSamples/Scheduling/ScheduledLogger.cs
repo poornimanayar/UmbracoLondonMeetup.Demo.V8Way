@@ -8,13 +8,11 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Scheduling
     //lots of good examples in core - https://github.com/umbraco/Umbraco-CMS/tree/v8/contrib/src/Umbraco.Web/Scheduling HealthCheckNotifier, ScheduledPublishing etc
     public class ScheduledLogger : RecurringTaskBase
     {
-        private IRuntimeState _runtime;
-        private IProfilingLogger _logger;
+         private ILogger _logger;
 
-        public ScheduledLogger(IBackgroundTaskRunner<RecurringTaskBase> runner, int delayBeforeWeStart, int howOftenWeRepeat, IRuntimeState runtime, IProfilingLogger logger)
+        public ScheduledLogger(IBackgroundTaskRunner<RecurringTaskBase> runner, int delayBeforeWeStart, int howOftenWeRepeat, ILogger logger)
             : base(runner, delayBeforeWeStart, howOftenWeRepeat)
         {
-            _runtime = runtime;
             _logger = logger;
         }
 
