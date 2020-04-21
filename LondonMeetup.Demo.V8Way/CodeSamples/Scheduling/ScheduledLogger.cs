@@ -22,6 +22,6 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Scheduling
           return true;
         }
 
-        public override bool IsAsync { get; }
+        public override bool IsAsync => false;
     }
 }

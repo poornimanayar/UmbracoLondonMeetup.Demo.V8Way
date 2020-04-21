@@ -26,11 +26,11 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Components
 
             var task = new ScheduledLogger(_loggerRunner, delayBeforeWeStart, howOftenWeRepeat, _logger);
 
-            //As soon as we add our task to the runner it will start to run (after its delay period)
-            _loggerRunner.TryAdd(task);
-
             // you can also call events on background task runners
             _loggerRunner.TaskCompleted += Task_Completed;
+
+            //As soon as we add our task to the runner it will start to run (after its delay period)
+            _loggerRunner.TryAdd(task);
         }
 
         private void Task_Completed(BackgroundTaskRunner<IBackgroundTask> sender, TaskEventArgs<IBackgroundTask> e)
