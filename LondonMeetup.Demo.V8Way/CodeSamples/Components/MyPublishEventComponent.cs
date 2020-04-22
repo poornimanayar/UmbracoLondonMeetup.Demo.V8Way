@@ -36,7 +36,11 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Components
                 .Where(c => c.ContentType.Alias.InvariantEquals("Product")))
             {
                 // Do something if the content is using the MyContentType doctype
-             this._logger.Info<MyPublishEventComponent>("{content} has been saved and event fired!", content.Name);
+                this._logger.Info<MyPublishEventComponent>("{content} has been saved and event fired!", content.Name);
+
+
+                // message template stored with the value of content.Name as a part of message template, not useful 
+                this._logger.Info<MyPublishEventComponent>($"{content.Name} has been saved and event fired");
             }
         }
     }
