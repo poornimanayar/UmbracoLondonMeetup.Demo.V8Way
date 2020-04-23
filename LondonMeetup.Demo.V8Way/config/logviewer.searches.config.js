@@ -42,5 +42,9 @@
   {
     "name": "saved",
     "query": "Scheduled Logger run starting"
+  },
+  {
+    "name": "MessageTemplate search",
+    "query": "@MessageTemplate ='{content} has been saved and event fired!'"
   }
 ]
