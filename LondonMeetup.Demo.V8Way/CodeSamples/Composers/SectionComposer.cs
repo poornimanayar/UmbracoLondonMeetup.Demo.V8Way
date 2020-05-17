@@ -9,7 +9,8 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Composers
         /// <summary>Compose.</summary>
         public void Compose(Composition composition)
         {
-            composition.Sections().Append<CustomCodeSection>();
+            //insert a section at a particular position
+            composition.Sections().Insert<CustomCodeSection>(4);
         }
     }
 }
