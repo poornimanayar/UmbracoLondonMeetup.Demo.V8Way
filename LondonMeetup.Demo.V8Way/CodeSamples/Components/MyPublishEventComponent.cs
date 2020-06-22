@@ -1,10 +1,13 @@
 ﻿using System.Linq;
+using System.Web.Http.Filters;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
 using Umbraco.Core.Events;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Services;
 using Umbraco.Core.Services.Implement;
+using Umbraco.Web.Editors;
+using Umbraco.Web.Models.ContentEditing;
 
 namespace LondonMeetup.Demo.V8Way.CodeSamples.Components
 {

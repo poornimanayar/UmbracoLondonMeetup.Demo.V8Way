@@ -11,6 +11,7 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Composers
         {
             composition.Components().Append<MyPublishEventComponent>();
             composition.Components().Append<MyMemberSaveEventComponent>();
+            composition.Components().Append<RemoveTreeComponent>();
         }
     }
 }

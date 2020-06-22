@@ -2119,7 +2119,9 @@
     <Compile Include="CodeSamples\Components\MyPublishEventComponent.cs" />
     <Compile Include="CodeSamples\Components\MyValidationHandlerComponent.cs" />
     <Compile Include="CodeSamples\Components\ProductIndexComponent.cs" />
+    <Compile Include="CodeSamples\Components\RemoveTreeComponent.cs" />
     <Compile Include="CodeSamples\Components\ScheduledLoggerComponent.cs" />
+    <Compile Include="CodeSamples\Composers\DashboardComposer.cs" />
     <Compile Include="CodeSamples\Composers\ScheduledLoggerComposer.cs" />
     <Compile Include="CodeSamples\Composers\SetMediaFileSystemComposer.cs" />
     <Compile Include="CodeSamples\Composers\CorsComposer.cs" />
@@ -2140,6 +2142,7 @@
     <Compile Include="CodeSamples\Controllers\MyTreelessSectionTreeController.cs" />
     <Compile Include="CodeSamples\Controllers\TestAPIController.cs" />
     <Compile Include="CodeSamples\Dashboards\CustomCodeDashboard.cs" />
+    <Compile Include="CodeSamples\Dashboards\ExamineManagementDashboard.cs" />
     <Compile Include="CodeSamples\Examine\ProductIndexCreator.cs" />
     <Compile Include="CodeSamples\Handlers\MyRequestValidationHandler.cs" />
     <Compile Include="CodeSamples\Components\ProductRouteComponent.cs" />
