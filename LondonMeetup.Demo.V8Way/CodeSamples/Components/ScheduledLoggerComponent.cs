@@ -29,8 +29,29 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Components
             // you can also call events on background task runners
             _loggerRunner.TaskCompleted += Task_Completed;
 
+            _loggerRunner.TaskStarting += this.Task_Starting;
+
+            _loggerRunner.TaskCancelled += this.Task_Cancelled;
+
+            _loggerRunner.TaskError += this.Task_Error;
+
             //As soon as we add our task to the runner it will start to run (after its delay period)
             _loggerRunner.TryAdd(task);
+        }
+
+        private void Task_Error(BackgroundTaskRunner<IBackgroundTask> sender, TaskEventArgs<IBackgroundTask> e)
+        {
+            _logger.Info<ScheduledLoggerComponent>("Scheduled Logger error");
+        }
+
+        private void Task_Cancelled(BackgroundTaskRunner<IBackgroundTask> sender, TaskEventArgs<IBackgroundTask> e)
+        {
+            _logger.Info<ScheduledLoggerComponent>("Scheduled Logger cancelled");
+        }
+
+        private void Task_Starting(BackgroundTaskRunner<IBackgroundTask> sender, TaskEventArgs<IBackgroundTask> e)
+        {
+            _logger.Info<ScheduledLoggerComponent>("Scheduled Logger starting");
         }
 
         private void Task_Completed(BackgroundTaskRunner<IBackgroundTask> sender, TaskEventArgs<IBackgroundTask> e)

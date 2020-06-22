@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Umbraco.Core.Logging;
 using Umbraco.Web.WebApi;
 
@@ -7,7 +8,7 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Controllers
 {
     public class TestAPIController : UmbracoApiController
     {
-         [HttpPost]
+        [HttpPost]
         public string SayHello()
         {
             var random = new Random();
@@ -18,8 +19,13 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Controllers
             // message template stored with the value of newrandom as a part of message template, not useful 
             Logger.Info<TestAPIController>($"We are saying hello to {newRandom}");
             Logger.Info<TestAPIController>($"I am saying hello!");
-           
+
             return "Hello there";
+        }
+        
+        public string GetData()
+        {
+           return "Hello there";
         }
     }
 }

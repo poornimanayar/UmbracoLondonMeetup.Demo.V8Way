@@ -11,3 +11,5 @@ obj
 .vs/LondonMeetup.Demo.V8Way/v16/
 
 packages
+
+.idea/

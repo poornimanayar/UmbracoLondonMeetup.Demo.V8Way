@@ -1,5 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\UmbracoCms.8.6.1\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.8.6.1\build\UmbracoCms.props')" />
+  <Import Project="..\packages\UmbracoCms.8.6.2\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.8.6.2\build\UmbracoCms.props')" />
   <Import Project="..\packages\uSync.8.5.0\build\uSync.props" Condition="Exists('..\packages\uSync.8.5.0\build\uSync.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -252,20 +252,25 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Umbraco.Core, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Core.8.6.1\lib\net472\Umbraco.Core.dll</HintPath>
+    <Reference Include="Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UmbracoCms.Core.8.6.2\lib\net472\Umbraco.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Umbraco.Examine, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Web.8.6.1\lib\net472\Umbraco.Examine.dll</HintPath>
+    <Reference Include="Umbraco.Examine, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UmbracoCms.Web.8.6.2\lib\net472\Umbraco.Examine.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Web.8.6.1\lib\net472\Umbraco.ModelsBuilder.Embedded.dll</HintPath>
+    <Reference Include="Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UmbracoCms.Web.8.6.2\lib\net472\Umbraco.ModelsBuilder.Embedded.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Umbraco.Web, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Web.8.6.1\lib\net472\Umbraco.Web.dll</HintPath>
+    <Reference Include="Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UmbracoCms.Web.8.6.2\lib\net472\Umbraco.Web.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Umbraco.Web.UI, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\UmbracoCms.Web.8.6.1\lib\net472\Umbraco.Web.UI.dll</HintPath>
+    <Reference Include="Umbraco.Web.UI, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\UmbracoCms.Web.8.6.2\lib\net472\Umbraco.Web.UI.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="uSync8.BackOffice, Version=8.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\uSync.8.5.0\lib\net472\uSync8.BackOffice.dll</HintPath>
@@ -348,25 +353,26 @@
     <Content Include="App_Plugins\uSync8\usync.css" />
     <Content Include="App_Plugins\uSync8\uSyncHub.js" />
     <Content Include="App_Plugins\uSync8\uSyncService.js" />
-    <Content Include="config\grid.editors.config.js" />
-    <Content Include="config\Lang\cs-CZ.user.xml" />
-    <Content Include="config\Lang\da-DK.user.xml" />
-    <Content Include="config\Lang\de-DE.user.xml" />
-    <Content Include="config\Lang\en-GB.user.xml" />
-    <Content Include="config\Lang\en-US.user.xml" />
-    <Content Include="config\Lang\es-ES.user.xml" />
-    <Content Include="config\Lang\fr-FR.user.xml" />
-    <Content Include="config\Lang\he-IL.user.xml" />
-    <Content Include="config\Lang\it-IT.user.xml" />
-    <Content Include="config\Lang\ja-JP.user.xml" />
-    <Content Include="config\Lang\ko-KR.user.xml" />
-    <Content Include="config\Lang\nb-NO.user.xml" />
-    <Content Include="config\Lang\nl-NL.user.xml" />
-    <Content Include="config\Lang\pl-PL.user.xml" />
-    <Content Include="config\Lang\pt-BR.user.xml" />
-    <Content Include="config\Lang\ru-RU.user.xml" />
-    <Content Include="config\Lang\sv-SE.user.xml" />
-    <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="Config\BackOfficeTours\getting-started.json" />
+    <Content Include="Config\grid.editors.config.js" />
+    <Content Include="Config\Lang\cs-CZ.user.xml" />
+    <Content Include="Config\Lang\da-DK.user.xml" />
+    <Content Include="Config\Lang\de-DE.user.xml" />
+    <Content Include="Config\Lang\en-GB.user.xml" />
+    <Content Include="Config\Lang\en-US.user.xml" />
+    <Content Include="Config\Lang\es-ES.user.xml" />
+    <Content Include="Config\Lang\fr-FR.user.xml" />
+    <Content Include="Config\Lang\he-IL.user.xml" />
+    <Content Include="Config\Lang\it-IT.user.xml" />
+    <Content Include="Config\Lang\ja-JP.user.xml" />
+    <Content Include="Config\Lang\ko-KR.user.xml" />
+    <Content Include="Config\Lang\nb-NO.user.xml" />
+    <Content Include="Config\Lang\nl-NL.user.xml" />
+    <Content Include="Config\Lang\pl-PL.user.xml" />
+    <Content Include="Config\Lang\pt-BR.user.xml" />
+    <Content Include="Config\Lang\ru-RU.user.xml" />
+    <Content Include="Config\Lang\sv-SE.user.xml" />
+    <Content Include="Config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="Global.asax" />
@@ -2095,12 +2101,21 @@
     <Content Include="Umbraco\Views\users\views\groups\groups.html" />
     <Content Include="Umbraco\Views\users\views\users\users.html" />
     <Content Include="Umbraco\Views\users\views\user\details.html" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeSamples\Components\CorsComponent.cs" />
     <Compile Include="CodeSamples\Components\ExamineEventsComponent.cs" />
+    <Compile Include="CodeSamples\Components\MyMemberSaveEventComponent.cs" />
     <Compile Include="CodeSamples\Components\MyPublishEventComponent.cs" />
     <Compile Include="CodeSamples\Components\MyValidationHandlerComponent.cs" />
     <Compile Include="CodeSamples\Components\ProductIndexComponent.cs" />
@@ -2110,7 +2125,7 @@
     <Compile Include="CodeSamples\Composers\CorsComposer.cs" />
     <Compile Include="CodeSamples\Composers\CustomCodeContentAppComposer.cs" />
     <Compile Include="CodeSamples\Composers\ExamineEventComposer.cs" />
-    <Compile Include="CodeSamples\Composers\MyPublishEventComposer.cs" />
+    <Compile Include="CodeSamples\Composers\MyEventHandlerComposer.cs" />
     <Compile Include="CodeSamples\Composers\MyServiceComposer.cs" />
     <Compile Include="CodeSamples\Composers\MyValidationHandlerComposer.cs" />
     <Compile Include="CodeSamples\Composers\ProductIndexComposer.cs" />
@@ -2173,13 +2188,12 @@
     <Content Include="config\uSync8.config" />
     <Content Include="App_Plugins\uSync8\package.manifest" />
     <Content Include="App_Plugins\uSync8\addons.json" />
-    <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
-    <Content Include="config\tinyMceConfig.config" />
-    <Content Include="config\serilog.user.config" />
-    <Content Include="config\serilog.config" />
-    <Content Include="config\HealthChecks.config" />
-    <Content Include="config\BackOfficeTours\getting-started.json" />
+    <None Include="Config\HealthChecks.config" />
+    <None Include="Config\serilog.config" />
+    <None Include="Config\serilog.user.config" />
+    <None Include="Config\tinyMceConfig.config" />
+    <None Include="Media\Web.config" />
     <None Include="packages.config" />
     <Content Include="Umbraco\assets\fonts\helveticons\helveticons.eot" />
     <Content Include="Umbraco\assets\fonts\helveticons\helveticons.ttf" />
@@ -2379,14 +2393,6 @@
     <Content Include="uSync\v8\Templates\person.config" />
     <Content Include="uSync\v8\Templates\product.config" />
     <Content Include="uSync\v8\Templates\products.config" />
-    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2436,12 +2442,12 @@
     <Error Condition="!Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets'))" />
     <Error Condition="!Exists('..\packages\uSync.8.5.0\build\uSync.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.5.0\build\uSync.props'))" />
     <Error Condition="!Exists('..\packages\uSync.8.5.0\build\uSync.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.5.0\build\uSync.targets'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.8.6.1\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.6.1\build\UmbracoCms.props'))" />
-    <Error Condition="!Exists('..\packages\UmbracoCms.8.6.1\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.6.1\build\UmbracoCms.targets'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.6.2\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.6.2\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.6.2\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.6.2\build\UmbracoCms.targets'))" />
   </Target>
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
   <Import Project="..\packages\uSync.8.5.0\build\uSync.targets" Condition="Exists('..\packages\uSync.8.5.0\build\uSync.targets')" />
-  <Import Project="..\packages\UmbracoCms.8.6.1\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.6.1\build\UmbracoCms.targets')" />
+  <Import Project="..\packages\UmbracoCms.8.6.2\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.6.2\build\UmbracoCms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
