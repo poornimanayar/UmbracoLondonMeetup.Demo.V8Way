@@ -2126,6 +2126,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeSamples\Components\NonUmbracoRouteComponent.cs" />
     <Compile Include="CodeSamples\Components\AttributeRoutingComponent.cs" />
     <Compile Include="CodeSamples\Components\BundleComponent.cs" />
     <Compile Include="CodeSamples\Components\CorsComponent.cs" />
@@ -2136,9 +2137,10 @@
     <Compile Include="CodeSamples\Components\ProductIndexComponent.cs" />
     <Compile Include="CodeSamples\Components\RemoveTreeComponent.cs" />
     <Compile Include="CodeSamples\Components\ScheduledLoggerComponent.cs" />
-    <Compile Include="CodeSamples\Composers\AttributeRouting.cs" />
+    <Compile Include="CodeSamples\Composers\AttributeRoutingComposer.cs" />
     <Compile Include="CodeSamples\Composers\BundleComposer.cs" />
     <Compile Include="CodeSamples\Composers\DashboardComposer.cs" />
+    <Compile Include="CodeSamples\Composers\NonUmbracoRouteComposer.cs" />
     <Compile Include="CodeSamples\Composers\ScheduledLoggerComposer.cs" />
     <Compile Include="CodeSamples\Composers\SetMediaFileSystemComposer.cs" />
     <Compile Include="CodeSamples\Composers\CorsComposer.cs" />

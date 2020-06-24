@@ -5,11 +5,12 @@ using Umbraco.Core.Composing;
 
 namespace LondonMeetup.Demo.V8Way.CodeSamples.Components
 {
-    public class AttributeRoutingComponent :IComponent
+    public class NonUmbracoRouteComponent : IComponent
     {
         public void Initialize()
         {
-           GlobalConfiguration.Configuration.MapHttpAttributeRoutes();
+            RouteTable.Routes.MapRoute("NonUmbracoRoute", "non-umbraco-page", 
+               new { controller = "NonUmbracoPage", action = "Index" });
         }
 
         public void Terminate()
