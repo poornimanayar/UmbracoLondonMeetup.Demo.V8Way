@@ -2121,10 +2121,12 @@
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\NonUmbracoPage.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeSamples\Components\AttributeRoutingComponent.cs" />
     <Compile Include="CodeSamples\Components\BundleComponent.cs" />
     <Compile Include="CodeSamples\Components\CorsComponent.cs" />
     <Compile Include="CodeSamples\Components\ExamineEventsComponent.cs" />
@@ -2134,6 +2136,7 @@
     <Compile Include="CodeSamples\Components\ProductIndexComponent.cs" />
     <Compile Include="CodeSamples\Components\RemoveTreeComponent.cs" />
     <Compile Include="CodeSamples\Components\ScheduledLoggerComponent.cs" />
+    <Compile Include="CodeSamples\Composers\AttributeRouting.cs" />
     <Compile Include="CodeSamples\Composers\BundleComposer.cs" />
     <Compile Include="CodeSamples\Composers\DashboardComposer.cs" />
     <Compile Include="CodeSamples\Composers\ScheduledLoggerComposer.cs" />
@@ -2154,6 +2157,7 @@
     <Compile Include="CodeSamples\Controllers\MyProductController.cs" />
     <Compile Include="CodeSamples\Controllers\MyRenderMvcController.cs" />
     <Compile Include="CodeSamples\Controllers\MyTreelessSectionTreeController.cs" />
+    <Compile Include="CodeSamples\Controllers\NonUmbracoPageController.cs" />
     <Compile Include="CodeSamples\Controllers\TestAPIController.cs" />
     <Compile Include="CodeSamples\Dashboards\CustomCodeDashboard.cs" />
     <Compile Include="CodeSamples\Dashboards\ExamineManagementDashboard.cs" />
@@ -2416,12 +2420,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\CustomCodeSectionTree\" />
-    <Folder Include="Views\DemoSurface\" />
-    <Folder Include="Views\MyRenderMvc\" />
-    <Folder Include="Views\MyTreelessSection\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

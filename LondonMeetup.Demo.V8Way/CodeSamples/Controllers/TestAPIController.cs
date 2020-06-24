@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using System.Web.Routing;
 using Umbraco.Core.Logging;
 using Umbraco.Web.WebApi;
 
@@ -23,9 +24,11 @@ namespace LondonMeetup.Demo.V8Way.CodeSamples.Controllers
             return "Hello there";
         }
         
+        [Route("api/getdata")]
+        [HttpGet]
         public string GetData()
         {
-           return "Hello there";
+           return "Hello there from API via attribute routing";
         }
     }
 }
